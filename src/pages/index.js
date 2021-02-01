@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Requesters',
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
@@ -18,7 +18,7 @@ const features = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Providers',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
@@ -28,7 +28,7 @@ const features = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Developers',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
@@ -71,8 +71,26 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
+              to={useBaseUrl('docs/requester-overview')}>
+              Requesters
+            </Link>
+            &nbsp;&nbsp;
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/provider-overview')}>
+              Providers
+            </Link>
+            &nbsp;&nbsp;
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              Developers
             </Link>
           </div>
         </div>

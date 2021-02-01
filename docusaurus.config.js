@@ -1,30 +1,43 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Document Portal',
+  tagline: 'Get Started with [org] documentation.',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'wkande', // Usually your GitHub org/user name.
+  projectName: 'compare-docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      style: "dark",
+      title: 'Document Portal',
       logo: {
-        alt: 'My Site Logo',
+        alt: '',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          to: 'docs/requester-overview',
+          activeBasePath: 'docs/',
+          label: 'Requesters',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          to: 'docs/provider-overview',
+          activeBasePath: 'docs/',
+          label: 'Providers',
+          position: 'left',
+        },
+        {
+          to: 'docs/developer-overview',
+          activeBasePath: 'docs/',
+          label: 'Developers',
+          position: 'left',
+        },
+        /*{to: 'blog', label: 'Blog', position: 'left'},*/
+        {
+          href: 'https://github.com/wkande/compare-docusaurus',
           label: 'GitHub',
           position: 'right',
         },
