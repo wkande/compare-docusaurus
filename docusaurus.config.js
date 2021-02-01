@@ -2,7 +2,7 @@ module.exports = {
   title: 'Document Portal',
   tagline: 'Get Started with [org] documentation.',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/somewhere/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
